@@ -1,8 +1,20 @@
+@import url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fcategory%2Fbackgrounds-textures&psig=AOvVaw1Lew3RmIKEARgY4ZNUETyb&ust=1730071322107000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCM2IiYrYkDFQAAAAAdAAAAABAE);
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+  background: url(./dist/assets/0_hero.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 
 .app-container {
@@ -15,6 +27,7 @@ body {
 }
 
 h1 {
+  font-size: 36px;
   text-align: center;
   color: #333;
 }

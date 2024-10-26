@@ -29,10 +29,10 @@ function App() {
   };
 
   return (
-    <div className="app-container"> {/* Added app-container */}
+    <div className="app-container"> {}
       <h1>Ürün Yönetim Sistemi</h1>
       <main>
-        <div className="add-product-section"> {/* Applied class add-product-section */}
+        <div className="add-product-section"> {}
           <h2>Yeni Ürün Ekle <FaPlusCircle /></h2>
           <form onSubmit={handleAddProduct}>
             <input
