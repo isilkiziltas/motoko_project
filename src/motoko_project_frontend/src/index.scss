@@ -1,37 +1,88 @@
 body {
-  font-family: sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
 }
 
-img {
-  max-width: 50vw;
-  max-height: 25vw;
-  display: block;
-  margin: auto;
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.add-product-section {
+  background: #e9ecef;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.add-product-section h2 {
+  margin: 0;
 }
 
 form {
   display: flex;
-  justify-content: center;
-  gap: 0.5em;
-  flex-flow: row wrap;
-  max-width: 40vw;
-  margin: auto;
-  align-items: baseline;
+  flex-direction: column;
 }
 
-button[type="submit"] {
-  padding: 5px 20px;
-  margin: 10px auto;
-  float: right;
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
 }
 
-#greeting {
-  margin: 10px auto;
-  padding: 10px 60px;
-  border: 1px solid #222;
+button {
+  padding: 10px;
+  background-color: #5b4da2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#greeting:empty {
-  display: none;
+button:hover {
+  background-color: #483c8b;
+}
+
+.product-list-section {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #5b4da2;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eb9999;
+}
+
+tbody tr:hover {
+  background-color: #a6c9ec;
 }
